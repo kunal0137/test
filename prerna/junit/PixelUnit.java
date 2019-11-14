@@ -201,7 +201,9 @@ public class PixelUnit {
 		
 		// Just in case, manually override R_CONNECTION_JRI to be true for testing purposes
 		// Warn if this was not the case to begin with
-		if (!Boolean.parseBoolean(DIHelper.getInstance().getProperty(Constants.R_CONNECTION_JRI))) {
+		
+		//KUNAL TEST: Switching to rserve
+		if (Boolean.parseBoolean(DIHelper.getInstance().getProperty(Constants.R_CONNECTION_JRI))) {
 			LOGGER.warn("R must be functional for local testing.");
 			Properties coreProps = DIHelper.getInstance().getCoreProp();
 			coreProps.setProperty(Constants.R_CONNECTION_JRI, "false");
