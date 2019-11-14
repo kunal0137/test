@@ -1,0 +1,544 @@
+[
+  {
+    "pixelExpression": "AddPanel ( 0 ) ;",
+    "output": {
+      "panelId": "0",
+      "view": "visualization",
+      "viewOptions": "{\"type\":\"echarts\"}",
+      "viewOptionsMap": {
+        "federate-view": {
+          "app_id": "<<<appId>>>unit_test_movie_rdf<<</appId>>>"
+        },
+        "visualization": {
+          "type": "echarts"
+        }
+      },
+      "config": {
+        "type": "STANDARD",
+        "opacity": 100,
+        "labelOverride": false
+      },
+      "ornaments": {},
+      "events": {
+        "onSingleClick": {
+          "Unfilter": [
+            {
+              "disabledVisuals": [
+                "Grid",
+                "Sunburst"
+              ],
+              "default": true,
+              "query": "UnfilterFrame(<SelectedColumn>);",
+              "options": {},
+              "refresh": false,
+              "disabled": false,
+              "panel": ""
+            }
+          ]
+        },
+        "onBrush": {
+          "Filter": [
+            {
+              "default": true,
+              "query": "if(IsEmpty(<SelectedValues>), UnfilterFrame(<SelectedColumn>), SetFrameFilter(<SelectedColumn>==<SelectedValues>));",
+              "options": {},
+              "refresh": false,
+              "disabled": false,
+              "panel": ""
+            }
+          ]
+        }
+      },
+      "comments": {},
+      "position": {},
+      "filters": [],
+      "order": [],
+      "cbv": []
+    }
+  },
+  {
+    "pixelExpression": "Panel ( 0 ) | AddPanelEvents ( { \"onSingleClick\" : { \"Unfilter\" : [ { \"panel\" : \"\" , \"query\" : \"<encode>UnfilterFrame(<SelectedColumn>);</encode>\" , \"options\" : { } , \"refresh\" : false , \"default\" : true , \"disabledVisuals\" : [ \"Grid\" , \"Sunburst\" ] , \"disabled\" : false } ] } , \"onBrush\" : { \"Filter\" : [ { \"panel\" : \"\" , \"query\" : \"<encode>if(IsEmpty(<SelectedValues>), UnfilterFrame(<SelectedColumn>), SetFrameFilter(<SelectedColumn>==<SelectedValues>));</encode>\" , \"options\" : { } , \"refresh\" : false , \"default\" : true , \"disabled\" : false } ] } } ) ;",
+    "output": {
+      "panelId": "0",
+      "view": "visualization",
+      "viewOptions": "{\"type\":\"echarts\"}",
+      "viewOptionsMap": {
+        "federate-view": {
+          "app_id": "<<<appId>>>unit_test_movie_rdf<<</appId>>>"
+        },
+        "visualization": {
+          "type": "echarts"
+        }
+      },
+      "config": {
+        "type": "STANDARD",
+        "opacity": 100,
+        "labelOverride": false
+      },
+      "ornaments": {},
+      "events": {
+        "onSingleClick": {
+          "Unfilter": [
+            {
+              "disabledVisuals": [
+                "Grid",
+                "Sunburst"
+              ],
+              "default": true,
+              "query": "UnfilterFrame(<SelectedColumn>);",
+              "options": {},
+              "refresh": false,
+              "disabled": false,
+              "panel": ""
+            }
+          ]
+        },
+        "onBrush": {
+          "Filter": [
+            {
+              "default": true,
+              "query": "if(IsEmpty(<SelectedValues>), UnfilterFrame(<SelectedColumn>), SetFrameFilter(<SelectedColumn>==<SelectedValues>));",
+              "options": {},
+              "refresh": false,
+              "disabled": false,
+              "panel": ""
+            }
+          ]
+        }
+      },
+      "comments": {},
+      "position": {},
+      "filters": [],
+      "order": [],
+      "cbv": []
+    }
+  },
+  {
+    "pixelExpression": "Panel ( 0 ) | RetrievePanelEvents ( ) ;",
+    "output": {
+      "panelId": "0",
+      "events": {
+        "onSingleClick": {
+          "Unfilter": [
+            {
+              "disabledVisuals": [
+                "Grid",
+                "Sunburst"
+              ],
+              "default": true,
+              "query": "UnfilterFrame(<SelectedColumn>);",
+              "options": {},
+              "refresh": false,
+              "disabled": false,
+              "panel": ""
+            }
+          ]
+        },
+        "onBrush": {
+          "Filter": [
+            {
+              "default": true,
+              "query": "if(IsEmpty(<SelectedValues>), UnfilterFrame(<SelectedColumn>), SetFrameFilter(<SelectedColumn>==<SelectedValues>));",
+              "options": {},
+              "refresh": false,
+              "disabled": false,
+              "panel": ""
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "pixelExpression": "Panel ( 0 ) | SetPanelView ( \"visualization\" , \"<encode>{\"type\":\"echarts\"}</encode>\" ) ;",
+    "output": {
+      "panelId": "0",
+      "view": "visualization",
+      "options": "{\"type\":\"echarts\"}"
+    }
+  },
+  {
+    "pixelExpression": "Panel ( 0 ) | SetPanelView ( \"federate-view\" , \"<encode>{\"app_id\":\"<<<appId>>>unit_test_movie_rdf<<</appId>>>\"}</encode>\" ) ;",
+    "output": {
+      "panelId": "0",
+      "view": "federate-view",
+      "options": "{\"app_id\":\"<<<appId>>>unit_test_movie_rdf<<</appId>>>\"}"
+    }
+  },
+  {
+    "pixelExpression": "Panel ( 0 ) | AddPanelConfig ( config = [ { \"config\" : { \"type\" : \"STANDARD\" , \"opacity\" : 100 } } ] ) ;",
+    "output": {
+      "panelId": "0",
+      "view": "visualization",
+      "viewOptions": "{\"type\":\"echarts\"}",
+      "viewOptionsMap": {
+        "federate-view": {
+          "app_id": "<<<appId>>>unit_test_movie_rdf<<</appId>>>"
+        },
+        "visualization": {
+          "type": "echarts"
+        }
+      },
+      "config": {
+        "type": "STANDARD",
+        "opacity": 100,
+        "labelOverride": false
+      },
+      "ornaments": {},
+      "events": {
+        "onSingleClick": {
+          "Unfilter": [
+            {
+              "disabledVisuals": [
+                "Grid",
+                "Sunburst"
+              ],
+              "default": true,
+              "query": "UnfilterFrame(<SelectedColumn>);",
+              "options": {},
+              "refresh": false,
+              "disabled": false,
+              "panel": ""
+            }
+          ]
+        },
+        "onBrush": {
+          "Filter": [
+            {
+              "default": true,
+              "query": "if(IsEmpty(<SelectedValues>), UnfilterFrame(<SelectedColumn>), SetFrameFilter(<SelectedColumn>==<SelectedValues>));",
+              "options": {},
+              "refresh": false,
+              "disabled": false,
+              "panel": ""
+            }
+          ]
+        }
+      },
+      "comments": {},
+      "position": {},
+      "filters": [],
+      "order": [],
+      "cbv": []
+    }
+  },
+  {
+    "pixelExpression": "CreateFrame ( frameType = [ GRID ] ) .as ( [ 'FRAMEUNITTEST' ] ) ;",
+    "output": {
+      "name": "FRAMEUNITTEST",
+      "type": "GRID"
+    }
+  },
+  {
+    "pixelExpression": "Database ( database = [ \"<<<appId>>>unit_test_movie_rdf<<</appId>>>\" ] ) | Select ( Director__Director , Title__Title , Title__MovieBudget , Title__Revenue_Domestic , Title__Revenue_International , Title__RottenTomatoes_Audience , Title__RottenTomatoes_Critics , Nominated__Nominated , Studio__Studio , Genre__Genre ) .as ( [ Director , Title , MovieBudget , Revenue_Domestic , Revenue_International , RottenTomatoes_Audience , RottenTomatoes_Critics , Nominated , Studio , Genre ] ) | Join ( ( Title , inner.join , Director ) , ( Title , inner.join , Genre ) , ( Title , inner.join , Studio ) , ( Title , inner.join , Nominated ) ) | Import ( ) ;",
+    "output": "Error occured executing query before loading into frame"
+  },
+  {
+    "pixelExpression": "Panel ( 0 ) | SetPanelView ( \"visualization\" ) ;",
+    "output": {
+      "panelId": "0",
+      "view": "visualization",
+      "options": "{\"type\":\"echarts\"}"
+    }
+  },
+  {
+    "pixelExpression": "Frame ( ) | QueryAll ( ) | AutoTaskOptions ( panel = [ \"0\" ] , layout = [ \"Grid\" ] ) | Collect ( - 1 ) ;",
+    "output": "Frame is empty and contains no data"
+  },
+  {
+    "pixelExpression": "ReplaceFrameFilter ( ( Studio == [ \"Buena_Vista\" ] ) ) ;",
+    "output": [
+      "SIMPLE",
+      {
+        "left": {
+          "pixelType": "COLUMN",
+          "class": "prerna.query.querystruct.selectors.QueryColumnSelector",
+          "value": [
+            {
+              "type": "COLUMN",
+              "content": {
+                "table": "Studio",
+                "column": "PRIM_KEY_PLACEHOLDER",
+                "alias": "Studio"
+              }
+            }
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        },
+        "comparator": "==",
+        "right": {
+          "pixelType": "CONST_STRING",
+          "class": "java.lang.String",
+          "value": [
+            "Buena_Vista"
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        }
+      },
+      "SIMPLE",
+      {
+        "left": {
+          "pixelType": "COLUMN",
+          "class": "prerna.query.querystruct.selectors.QueryColumnSelector",
+          "value": [
+            {
+              "type": "COLUMN",
+              "content": {
+                "table": "Genre",
+                "column": "PRIM_KEY_PLACEHOLDER",
+                "alias": "Genre"
+              }
+            }
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        },
+        "comparator": "==",
+        "right": {
+          "pixelType": "CONST_STRING",
+          "class": "java.util.Vector",
+          "value": [
+            [
+              "Comedy-Musical",
+              "Drama"
+            ]
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "pixelExpression": "ifError ( ( Frame ( ) | Select ( Director , Genre , MovieBudget , Nominated , Revenue_Domestic , Revenue_International , RottenTomatoes_Audience , RottenTomatoes_Critics , Studio , Title ) .as ( [ Director , Genre , MovieBudget , Nominated , Revenue_Domestic , Revenue_International , RottenTomatoes_Audience , RottenTomatoes_Critics , Studio , Title ] ) | With ( Panel ( 0 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { \"0\" : { \"layout\" : \"Grid\" , \"alignment\" : { \"label\" : [ \"Director\" , \"Genre\" , \"MovieBudget\" , \"Nominated\" , \"Revenue_Domestic\" , \"Revenue_International\" , \"RottenTomatoes_Audience\" , \"RottenTomatoes_Critics\" , \"Studio\" , \"Title\" ] } } } ) | Collect ( - 1 ) ) , ( true ) ) ;",
+    "output": true
+  },
+  {
+    "pixelExpression": "ReplaceFrameFilter ( ( Genre == [ \"Comedy-Musical\" , \"Drama\" ] ) ) ;",
+    "output": [
+      "SIMPLE",
+      {
+        "left": {
+          "pixelType": "COLUMN",
+          "class": "prerna.query.querystruct.selectors.QueryColumnSelector",
+          "value": [
+            {
+              "type": "COLUMN",
+              "content": {
+                "table": "Studio",
+                "column": "PRIM_KEY_PLACEHOLDER",
+                "alias": "Studio"
+              }
+            }
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        },
+        "comparator": "==",
+        "right": {
+          "pixelType": "CONST_STRING",
+          "class": "java.lang.String",
+          "value": [
+            "Buena_Vista"
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        }
+      },
+      "SIMPLE",
+      {
+        "left": {
+          "pixelType": "COLUMN",
+          "class": "prerna.query.querystruct.selectors.QueryColumnSelector",
+          "value": [
+            {
+              "type": "COLUMN",
+              "content": {
+                "table": "Genre",
+                "column": "PRIM_KEY_PLACEHOLDER",
+                "alias": "Genre"
+              }
+            }
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        },
+        "comparator": "==",
+        "right": {
+          "pixelType": "CONST_STRING",
+          "class": "java.util.Vector",
+          "value": [
+            [
+              "Comedy-Musical",
+              "Drama"
+            ]
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "pixelExpression": "ifError ( ( Frame ( ) | Select ( Director , Genre , MovieBudget , Nominated , Revenue_Domestic , Revenue_International , RottenTomatoes_Audience , RottenTomatoes_Critics , Studio , Title ) .as ( [ Director , Genre , MovieBudget , Nominated , Revenue_Domestic , Revenue_International , RottenTomatoes_Audience , RottenTomatoes_Critics , Studio , Title ] ) | With ( Panel ( 0 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { \"0\" : { \"layout\" : \"Grid\" , \"alignment\" : { \"label\" : [ \"Director\" , \"Genre\" , \"MovieBudget\" , \"Nominated\" , \"Revenue_Domestic\" , \"Revenue_International\" , \"RottenTomatoes_Audience\" , \"RottenTomatoes_Critics\" , \"Studio\" , \"Title\" ] } } } ) | Collect ( - 1 ) ) , ( true ) ) ;",
+    "output": true
+  },
+  {
+    "pixelExpression": "ReplaceFrameFilter ( ( Director == [ \"Alex_Kurtzman\" ] ) ) ;",
+    "output": [
+      "SIMPLE",
+      {
+        "left": {
+          "pixelType": "COLUMN",
+          "class": "prerna.query.querystruct.selectors.QueryColumnSelector",
+          "value": [
+            {
+              "type": "COLUMN",
+              "content": {
+                "table": "Studio",
+                "column": "PRIM_KEY_PLACEHOLDER",
+                "alias": "Studio"
+              }
+            }
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        },
+        "comparator": "==",
+        "right": {
+          "pixelType": "CONST_STRING",
+          "class": "java.lang.String",
+          "value": [
+            "Buena_Vista"
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        }
+      },
+      "SIMPLE",
+      {
+        "left": {
+          "pixelType": "COLUMN",
+          "class": "prerna.query.querystruct.selectors.QueryColumnSelector",
+          "value": [
+            {
+              "type": "COLUMN",
+              "content": {
+                "table": "Genre",
+                "column": "PRIM_KEY_PLACEHOLDER",
+                "alias": "Genre"
+              }
+            }
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        },
+        "comparator": "==",
+        "right": {
+          "pixelType": "CONST_STRING",
+          "class": "java.util.Vector",
+          "value": [
+            [
+              "Comedy-Musical",
+              "Drama"
+            ]
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "pixelExpression": "ifError ( ( Frame ( ) | Select ( Director , Genre , MovieBudget , Nominated , Revenue_Domestic , Revenue_International , RottenTomatoes_Audience , RottenTomatoes_Critics , Studio , Title ) .as ( [ Director , Genre , MovieBudget , Nominated , Revenue_Domestic , Revenue_International , RottenTomatoes_Audience , RottenTomatoes_Critics , Studio , Title ] ) | With ( Panel ( 0 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { \"0\" : { \"layout\" : \"Grid\" , \"alignment\" : { \"label\" : [ \"Director\" , \"Genre\" , \"MovieBudget\" , \"Nominated\" , \"Revenue_Domestic\" , \"Revenue_International\" , \"RottenTomatoes_Audience\" , \"RottenTomatoes_Critics\" , \"Studio\" , \"Title\" ] } } } ) | Collect ( - 1 ) ) , ( true ) ) ;",
+    "output": true
+  },
+  {
+    "pixelExpression": "DeleteFrameFilter ( index = [ 2 ] ) ;",
+    "output": [
+      "SIMPLE",
+      {
+        "left": {
+          "pixelType": "COLUMN",
+          "class": "prerna.query.querystruct.selectors.QueryColumnSelector",
+          "value": [
+            {
+              "type": "COLUMN",
+              "content": {
+                "table": "Studio",
+                "column": "PRIM_KEY_PLACEHOLDER",
+                "alias": "Studio"
+              }
+            }
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        },
+        "comparator": "==",
+        "right": {
+          "pixelType": "CONST_STRING",
+          "class": "java.lang.String",
+          "value": [
+            "Buena_Vista"
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        }
+      },
+      "SIMPLE",
+      {
+        "left": {
+          "pixelType": "COLUMN",
+          "class": "prerna.query.querystruct.selectors.QueryColumnSelector",
+          "value": [
+            {
+              "type": "COLUMN",
+              "content": {
+                "table": "Genre",
+                "column": "PRIM_KEY_PLACEHOLDER",
+                "alias": "Genre"
+              }
+            }
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        },
+        "comparator": "==",
+        "right": {
+          "pixelType": "CONST_STRING",
+          "class": "java.util.Vector",
+          "value": [
+            [
+              "Comedy-Musical",
+              "Drama"
+            ]
+          ],
+          "opType": [
+            "OPERATION"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "pixelExpression": "ifError ( ( Frame ( ) | Select ( Director , Genre , MovieBudget , Nominated , Revenue_Domestic , Revenue_International , RottenTomatoes_Audience , RottenTomatoes_Critics , Studio , Title ) .as ( [ Director , Genre , MovieBudget , Nominated , Revenue_Domestic , Revenue_International , RottenTomatoes_Audience , RottenTomatoes_Critics , Studio , Title ] ) | With ( Panel ( 0 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { \"0\" : { \"layout\" : \"Grid\" , \"alignment\" : { \"label\" : [ \"Director\" , \"Genre\" , \"MovieBudget\" , \"Nominated\" , \"Revenue_Domestic\" , \"Revenue_International\" , \"RottenTomatoes_Audience\" , \"RottenTomatoes_Critics\" , \"Studio\" , \"Title\" ] } } } ) | Collect ( - 1 ) ) , ( true ) ) ;",
+    "output": true
+  }
+]
