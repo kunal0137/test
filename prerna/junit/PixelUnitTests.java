@@ -171,6 +171,12 @@ public class PixelUnitTests extends PixelUnit {
 	@Override
 	@Before
 	public void initializeTest() {
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if (!skipTest) {
 			if (insightState != null && !(insightState.isEmpty()) && insightState.contains("START")) {
 				initializeTest(true);
