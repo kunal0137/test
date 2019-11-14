@@ -204,7 +204,7 @@ public class PixelUnit {
 		if (!Boolean.parseBoolean(DIHelper.getInstance().getProperty(Constants.R_CONNECTION_JRI))) {
 			LOGGER.warn("R must be functional for local testing.");
 			Properties coreProps = DIHelper.getInstance().getCoreProp();
-			coreProps.setProperty(Constants.R_CONNECTION_JRI, "true");
+			coreProps.setProperty(Constants.R_CONNECTION_JRI, "false");
 			DIHelper.getInstance().setCoreProp(coreProps);
 		}
 		
