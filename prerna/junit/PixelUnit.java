@@ -203,12 +203,12 @@ public class PixelUnit {
 		// Warn if this was not the case to begin with
 		
 		//KUNAL TEST: Switching to rserve
-		if (Boolean.parseBoolean(DIHelper.getInstance().getProperty(Constants.R_CONNECTION_JRI))) {
-			LOGGER.warn("R must be functional for local testing.");
-			Properties coreProps = DIHelper.getInstance().getCoreProp();
-			coreProps.setProperty(Constants.R_CONNECTION_JRI, "false");
-			DIHelper.getInstance().setCoreProp(coreProps);
-		}
+//		if (Boolean.parseBoolean(DIHelper.getInstance().getProperty(Constants.R_CONNECTION_JRI))) {
+//			LOGGER.warn("R must be functional for local testing.");
+//			Properties coreProps = DIHelper.getInstance().getCoreProp();
+//			coreProps.setProperty(Constants.R_CONNECTION_JRI, "false");
+//			DIHelper.getInstance().setCoreProp(coreProps);
+//		}
 		
 		// Turn tracking off while testing
 		if (Boolean.parseBoolean(DIHelper.getInstance().getProperty(Constants.T_ON))) {
