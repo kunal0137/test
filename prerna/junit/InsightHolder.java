@@ -16,7 +16,7 @@ public class InsightHolder {
 		
 	}
 	
-	public static  InsightHolder getInstance()
+	synchronized public static  InsightHolder getInstance()
 	{
 		if(insightHolder == null)
 		{
