@@ -1,0 +1,172 @@
+{"pixelExpression":"FrameHeaders ( ) ;","isMeta":false,"output":{
+  "headerInfo": {
+    "joins": [],
+    "headers": [
+      {
+        "qsName": {
+          "FRAME_QUERY": [
+            "FRAMEPY9__Genre"
+          ]
+        },
+        "isDerived": true,
+        "displayName": "Genre",
+        "isPrim": "false",
+        "dataType": "STRING",
+        "header": "FRAMEPY9__Genre",
+        "alias": "Genre",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      },
+      {
+        "qsName": "unknown",
+        "isDerived": "false",
+        "displayName": "Genre_Cluster",
+        "isPrim": "false",
+        "dataType": "NUMBER",
+        "header": "FRAMEPY9__Genre_Cluster",
+        "alias": "Genre_Cluster",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      },
+      {
+        "qsName": {
+          "FRAME_QUERY": [
+            "FRAMEPY9__MovieBudget"
+          ]
+        },
+        "isDerived": true,
+        "displayName": "MovieBudget",
+        "isPrim": "false",
+        "dataType": "NUMBER",
+        "header": "FRAMEPY9__MovieBudget",
+        "alias": "MovieBudget",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      },
+      {
+        "qsName": {
+          "FRAME_QUERY": [
+            "FRAMEPY9__Nominated"
+          ]
+        },
+        "isDerived": true,
+        "displayName": "Nominated",
+        "isPrim": "false",
+        "dataType": "STRING",
+        "header": "FRAMEPY9__Nominated",
+        "alias": "Nominated",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      },
+      {
+        "qsName": {
+          "FRAME_QUERY": [
+            "FRAMEPY9__Revenue_Domestic"
+          ]
+        },
+        "isDerived": true,
+        "displayName": "Revenue_Domestic",
+        "isPrim": "false",
+        "dataType": "NUMBER",
+        "header": "FRAMEPY9__Revenue_Domestic",
+        "alias": "Revenue_Domestic",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      },
+      {
+        "qsName": {
+          "FRAME_QUERY": [
+            "FRAMEPY9__Revenue_Domestic_1"
+          ]
+        },
+        "isDerived": true,
+        "displayName": "Revenue_Domestic_1",
+        "isPrim": "false",
+        "dataType": "STRING",
+        "header": "FRAMEPY9__Revenue_Domestic_1",
+        "alias": "Revenue_Domestic_1",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      },
+      {
+        "qsName": {
+          "FRAME_QUERY": [
+            "FRAMEPY9__Revenue_International"
+          ]
+        },
+        "isDerived": true,
+        "displayName": "Revenue_International",
+        "isPrim": "false",
+        "dataType": "NUMBER",
+        "header": "FRAMEPY9__Revenue_International",
+        "alias": "Revenue_International",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      },
+      {
+        "qsName": {
+          "FRAME_QUERY": [
+            "FRAMEPY9__RottenTomatoes_Audience"
+          ]
+        },
+        "isDerived": true,
+        "displayName": "RottenTomatoes_Audience",
+        "isPrim": "false",
+        "dataType": "NUMBER",
+        "header": "FRAMEPY9__RottenTomatoes_Audience",
+        "alias": "RottenTomatoes_Audience",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      },
+      {
+        "qsName": {
+          "FRAME_QUERY": [
+            "FRAMEPY9__RottenTomatoes_Critics"
+          ]
+        },
+        "isDerived": true,
+        "displayName": "RottenTomatoes_Critics",
+        "isPrim": "false",
+        "dataType": "NUMBER",
+        "header": "FRAMEPY9__RottenTomatoes_Critics",
+        "alias": "RottenTomatoes_Critics",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      },
+      {
+        "qsName": {
+          "FRAME_QUERY": [
+            "FRAMEPY9__Studio"
+          ]
+        },
+        "isDerived": true,
+        "displayName": "Studio",
+        "isPrim": "false",
+        "dataType": "STRING",
+        "header": "FRAMEPY9__Studio",
+        "alias": "Studio",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      },
+      {
+        "qsName": {
+          "FRAME_QUERY": [
+            "FRAMEPY9__Title"
+          ]
+        },
+        "isDerived": true,
+        "displayName": "Title",
+        "isPrim": "false",
+        "dataType": "STRING",
+        "header": "FRAMEPY9__Title",
+        "alias": "Title",
+        "isFiltered": false,
+        "parentNode": "FRAMEPY9"
+      }
+    ]
+  },
+  "name": "FRAMEPY9",
+  "type": "R"
+},"operationType":[
+  "FRAME_HEADERS"
+]}
